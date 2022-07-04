@@ -11,4 +11,5 @@ Code for automatically filling out absences in the money forward system using _s
 - Change "id" field to the id of company;
 - Change "mail" field to account email;
 - Change "pw" field to account password;
+- The code has a threshold value for a function called _checkmonth()_. This is so that even if you run the program on the beginning of the following month, the program will still correctly fill out information on the previous month. In the current implementation, this can be done until theb 7th day of the subsequent month. After that, the code will not switch month and will fill absences in the current month.
 
